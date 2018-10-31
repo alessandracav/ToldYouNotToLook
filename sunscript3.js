@@ -9,9 +9,11 @@
 
 	var h5 = 0
 $(window).on('scroll', function () {
-    h5 = $(document).scrollTop()/20000;
+    h5 = $(document).scrollTop()/30000;
+    opacityValue = $(document).scrollTop()/8000;
   	$('h5 > span').text(h5);
-    $("#layer3").css({"-webkit-filter": "blur("+h5+"px)","-moz-filter": "blur("+h5+"px)","filter": "blur("+h5+"px)" })     
+    $("#layer3").css({"-webkit-filter": "blur("+h5+"px)","-moz-filter": "blur("+h5+"px)","filter": "blur("+h5+"px)" }) 
+    $('.background').css({'opacity': opacityValue})    
 });
  
 	if (!window.requestAnimationFrame)

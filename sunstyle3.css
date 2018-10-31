@@ -124,3 +124,5 @@ h4 { position: relative;
 .right { background: #f6e2a0; }
 
 .gradient { background-image: linear-gradient(#fabb82, #ffffff); }
+
+.background { opacity: 0; width: 100vw; height: 100vh; background: #ffffff; }
